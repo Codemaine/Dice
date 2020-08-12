@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>Dice</title>
+</head>
+<body> 
+	<center class="main">
+	<div class="head">
+		<p>Dice</p>
+	</div>
+	<p class="title">A dice converted into an app</p>
+	<button onclick="dice()" id="button" class="button3">Click Me</button>
+	<br>
+	<br>
+	<img src="" id="dice-number">
+</center>
+</body>
+</html>
+<script type="text/javascript">
+
+		var myArray = ["1","2","3","4","5","6"]
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+function dice(){
+	
+
+document.getElementById("button").style.width = "150px";
+document.getElementById('button').innerHTML = "The number is "+randomItem;
+document.getElementById('dice-number').src = randomItem+".png";
+
+setTimeout(reload, 1000);
+}
+
+function reload() {
+	window.location.reload();
+}
+</script>
