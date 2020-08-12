@@ -15,7 +15,7 @@
 	<button onclick="dice()" id="button" class="button3">Click Me</button>
 	<br>
 	<br>
-	<img src="" id="dice-number">
+	<img src="" draggable="false" id="dice-number">
 </center>
 </body>
 </html>
@@ -35,6 +35,15 @@ setTimeout(reload, 1000);
 }
 
 function reload() {
-	window.location.reload();
+
+    document.getElementById('button').innerHTML = "Reloading ...."
+
+    setTimeout(reloade, 100.8);
+
+	
+}
+
+function reloade(){
+window.location.reload();
 }
 </script>
