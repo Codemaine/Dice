@@ -10,7 +10,7 @@
 	<div class="head">
 		<p>Dice</p>
 	</div>
-	<p class="title">A dice converted into an app</p>
+	<p class="title">A working javascript dice.</p>
 	<button onclick="dice()" id="button" class="button3">Click Me</button>
 	<br>
 	<br>
@@ -28,7 +28,7 @@ function dice(){
 
 document.getElementById("button").style.width = "150px";
 document.getElementById('button').innerHTML = "The number is "+randomItem;
-document.getElementById('dice-number').src = randomItem+".png";
+document.getElementById('dice-number').src = "img/"+randomItem+".png";
 
 setTimeout(reload, 1000);
 }
