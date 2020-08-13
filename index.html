@@ -22,16 +22,16 @@
 <script type="text/javascript">
 
 		var myArray = ["1","2","3","4","5","6"]
-var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
 
 function dice(){
 	
-
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 document.getElementById("button").style.width = "150px";
 document.getElementById('button').innerHTML = "The number is "+randomItem;
 document.getElementById('dice-number').src = "img/"+randomItem+".png";
 
-setTimeout(reload, 1000);
+/*setTimeout(reload, 1000);*/
 }
 
 function reload() {
