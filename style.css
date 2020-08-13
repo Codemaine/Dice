@@ -25,6 +25,7 @@ background: linear-gradient(90deg, rgba(24,114,241,1) 0%, rgba(10,121,232,1) 36%
   height: 50px;
   width: 100px;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .button3:hover {
