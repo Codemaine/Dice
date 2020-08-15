@@ -15,7 +15,8 @@
 	<button onclick="dice()" id="button" class="button3">Click Me</button>
 	<br>
 	<br>
-	<img src="" draggable="false" id="dice-number">
+	<div id="dice-number"></div>
+	
 </center>
 </body>
 </html>
@@ -29,7 +30,7 @@ function dice(){
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 document.getElementById("button").style.width = "150px";
 document.getElementById('button').innerHTML = "The number is "+randomItem;
-document.getElementById('dice-number').src = "img/"+randomItem+".png";
+document.getElementById('dice-number').innerHTML = "<img src='img/"+randomItem+".png' />";
 
 /*setTimeout(reload, 1000);*/
 }
